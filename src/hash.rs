@@ -259,7 +259,7 @@ fn compute_intermediate_hashes(
     computed_hashes.push(intermediate_hash);
 }
 
-fn sha256(s: &str) -> String {
+pub fn sha256(s: &str) -> String {
     /* SHA-256 Constants */
     const K: &[u32] = &[
         0x428a2f98, 0x71374491, 0xb5c0fbcf, 0xe9b5dba5, 0x3956c25b, 0x59f111f1, 0x923f82a4,
